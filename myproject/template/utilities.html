@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Text Analyzer</h1>
+    <h2 style="text-align: center;">Check The Use Full Information You Want...</h2>
+
+    <form action="/removepunctuation/" method="post">{% csrf_token %}
+        <textarea name="text" style="margin-left:180px; width:850px; height:120px"></textarea><br>
+        <input type="checkbox"style="margin-left:180px; margin-bottom:5px;" name="removepunctuation" >Remove-punctuation<br >
+        <input type="checkbox"style="margin-left:180px; margin-bottom:5px;" name="capitalize" >Capitalize<br >
+        <input type="checkbox"style="margin-left:180px; margin-bottom:5px;" name="spaceremover" >space-remover<br >
+        <button type="submit" style="margin-left:180px; ">Analyze Text</button>
+    </form>
+</body>
+</html>
